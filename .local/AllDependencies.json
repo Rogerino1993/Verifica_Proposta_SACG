@@ -3493,15 +3493,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\roger_amaral\\.nuget\\packages\\": {}
+    "C:\\Users\\itamar_silva\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Verifica_Proposta_SACG_CAA",
       "projectName": "Verifica_Proposta_SACG_CAA",
-      "projectPath": "C:\\Users\\roger_amaral\\Downloads\\Verifica_Proposta_SACG\\Verifica_Proposta_SACG\\.local",
-      "packagesPath": "C:\\Users\\roger_amaral\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\roger_amaral\\Downloads\\Verifica_Proposta_SACG\\Verifica_Proposta_SACG\\.local"
+      "projectPath": "C:\\Users\\itamar_silva\\OneDrive - Confederação Sicredi\\Backup\\Documentos\\Central Centro Norte\\Automação - RPA UiPath\\Verifica_Proposta_SACG\\.local",
+      "packagesPath": "C:\\Users\\itamar_silva\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\itamar_silva\\OneDrive - Confederação Sicredi\\Backup\\Documentos\\Central Centro Norte\\Automação - RPA UiPath\\Verifica_Proposta_SACG\\.local"
     },
     "frameworks": {
       "net461": {

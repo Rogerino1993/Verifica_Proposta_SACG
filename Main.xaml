@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>998,1843</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1305,1888</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -104,8 +104,12 @@
         <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SACG_CAA workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SACG_CAA.xaml">
           <ui:InvokeWorkflowFile.Arguments>
             <InOutArgument x:TypeArguments="x:Boolean" x:Key="bInicio" />
-            <InArgument x:TypeArguments="x:String" x:Key="strCoop">[strCoop]</InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="varCodTitulo" />
+            <InArgument x:TypeArguments="x:String" x:Key="strCoop">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strCoop" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="varCodTitulo">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="varCodTitulo" />
+            </InArgument>
             <OutArgument x:TypeArguments="x:String" x:Key="varID_Proposta" />
           </ui:InvokeWorkflowFile.Arguments>
           <sap:WorkflowViewStateService.ViewState>
