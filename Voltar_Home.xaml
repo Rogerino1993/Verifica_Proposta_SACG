@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="teste" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="833,1397" sap2010:WorkflowViewState.IdRef="teste_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="teste" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="833,1261" sap2010:WorkflowViewState.IdRef="teste_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -48,7 +48,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="teste" sap:VirtualizedContainerService.HintSize="813,1337" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="teste" sap:VirtualizedContainerService.HintSize="813,1201" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="tela_home" />
     </Sequence.Variables>
@@ -57,11 +57,11 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <While sap:VirtualizedContainerService.HintSize="771,1245" sap2010:WorkflowViewState.IdRef="While_2">
+    <While sap:VirtualizedContainerService.HintSize="771,1109" sap2010:WorkflowViewState.IdRef="While_2">
       <While.Condition>
         <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="tela_home = False" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
       </While.Condition>
-      <Sequence sap:VirtualizedContainerService.HintSize="725,1087" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence sap:VirtualizedContainerService.HintSize="725,951" sap2010:WorkflowViewState.IdRef="Sequence_8">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -91,7 +91,7 @@
             </ui:Target>
           </ui:ImageFound.Target>
         </ui:ImageFound>
-        <If Condition="[tela_home]" sap:VirtualizedContainerService.HintSize="683,703" sap2010:WorkflowViewState.IdRef="If_3">
+        <If Condition="[tela_home]" sap:VirtualizedContainerService.HintSize="683,567" sap2010:WorkflowViewState.IdRef="If_3">
           <If.Then>
             <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
               <Assign.To>
@@ -103,7 +103,7 @@
             </Assign>
           </If.Then>
           <If.Else>
-            <Sequence sap:VirtualizedContainerService.HintSize="376,555" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence sap:VirtualizedContainerService.HintSize="376,419" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -112,18 +112,6 @@
               <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="%[k(esc)]">
                 <ui:TypeInto.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b3971cfb-dc4e-410f-87c1-da7df3305515">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
-                  </ui:Target>
-                </ui:TypeInto.Target>
-              </ui:TypeInto>
-              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="%[k(esc)]">
-                <ui:TypeInto.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="36f07b5c-9108-4612-87fa-7b875e4741be">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
