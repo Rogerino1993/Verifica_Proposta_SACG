@@ -1,0 +1,151 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="teste" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="833,1397" sap2010:WorkflowViewState.IdRef="teste_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="teste" sap:VirtualizedContainerService.HintSize="813,1337" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="tela_home" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <While sap:VirtualizedContainerService.HintSize="771,1245" sap2010:WorkflowViewState.IdRef="While_2">
+      <While.Condition>
+        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="tela_home = False" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+      </While.Condition>
+      <Sequence sap:VirtualizedContainerService.HintSize="725,1087" sap2010:WorkflowViewState.IdRef="Sequence_8">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Ativa SACG" sap:VirtualizedContainerService.HintSize="683,106" sap2010:WorkflowViewState.IdRef="Activate_1">
+          <ui:Activate.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d7c66b4b-bc75-4bc3-837f-65f2e532841e" InformativeScreenshot="9a06f74d6e7ca47455275e4cb380da90" Selector="&lt;wnd app='cmd.exe' cls='ConsoleWindowClass' title='C:\WINDOWS\system32\cmd.exe' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Activate.Target>
+        </ui:Activate>
+        <ui:ImageFound DisplayName="Image Exists 'cmd.exe  C:\WINDOWS\sys...'" Found="[tela_home]" sap:VirtualizedContainerService.HintSize="683,106" sap2010:WorkflowViewState.IdRef="ImageFound_3">
+          <ui:ImageFound.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+          </ui:ImageFound.Image>
+          <ui:ImageFound.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6c67d976-a338-49c3-838c-c219542d8511" Selector="&lt;wnd app='cmd.exe' cls='ConsoleWindowClass' title='C:\WINDOWS\system32\cmd.exe' /&gt;" TimeoutMS="1500">
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:ImageFound.Target>
+        </ui:ImageFound>
+        <If Condition="[tela_home]" sap:VirtualizedContainerService.HintSize="683,703" sap2010:WorkflowViewState.IdRef="If_3">
+          <If.Then>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">[tela_home]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+              </Assign.Value>
+            </Assign>
+          </If.Then>
+          <If.Else>
+            <Sequence sap:VirtualizedContainerService.HintSize="376,555" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="%[k(esc)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b3971cfb-dc4e-410f-87c1-da7df3305515">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="%[k(esc)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="36f07b5c-9108-4612-87fa-7b875e4741be">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">[tela_home]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Voltar Home SACG&quot;]" />
+            </Sequence>
+          </If.Else>
+        </If>
+      </Sequence>
+    </While>
+  </Sequence>
+</Activity>
